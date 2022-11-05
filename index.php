@@ -67,7 +67,7 @@ function GetStr($string, $start, $end) {
 function AllinOne($data = 36){
     return substr(strtolower(sprintf('%04X%04X-%04X-%04X-%04X-%04X%04X%04X%04X%04X', mt_rand(1, 65535), mt_rand(1, 65535), mt_rand(1, 65535), mt_rand(16384, 20479), mt_rand(32768, 49151), mt_rand(1, 65535), mt_rand(1, 65535), mt_rand(1, 65535), mt_rand(1, 65535), mt_rand(1, 65535))), 0, $data);
 };
-
+$lista = $_GET['list'];
 $guid = AllinOne();
 $muid = AllinOne();
 $sid = AllinOne();
