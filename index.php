@@ -1,7 +1,9 @@
-<?php
+<? php
+
+ $search = curl_init();
 curl_setopt($search, CURLOPT_URL, "https://enkiduglobal.org/wp-admin/admin-ajax.php"); 
 curl_setopt($search, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($search, CURLOPT_ENCODING , "gzip");
+curl_setopt($search, CURLOPT_ENCODING , "");
 curl_setopt($search, CURLOPT_HTTPHEADER, explode("\n", 'Host: enkiduglobal.org
 content-length: 150
 sec-ch-ua: "Chromium";v="107", "Not=A?Brand";v="24"
